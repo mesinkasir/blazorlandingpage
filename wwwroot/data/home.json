@@ -1,0 +1,31 @@
+﻿[
+  {
+    "title": "Blazor Landing Page Web App",
+    "description": "An open source code project for built modern website using blazor webasembly",
+    "section1": "Blazor",
+    "section1text": "Built a new modern website singgle page application using blazor webassembly . with razor page make your easy for change any design and content.",
+    "section1cover": "https://dotnet.microsoft.com/static/images/illustrations/hybrid-apps-run-anywhere.svg?v=cu8mvOdSfvrSXE-ccSUPnAnU6GYayieMWHh2864aB4o",
+    "section1code": "dotnet watch run",
+    "section2": "Responsive",
+    "section2text": "Built responsive website app using blazor landing page, free download and full source code include, you can customises with you needed for your project.",
+    "section2cover": "https://dotnet.microsoft.com/static/images/illustrations/swimlane-cross-browser.svg?v=Dn8MopYGjU_eQHYwkoMR2PBYCTuywbKFrdHHRbwnRt4",
+    "section2code": "bootstrap/bootstrap.min.css",
+    "section3": "Hosting",
+    "section3text": "You can deploy on static hosting for live your website, just build for production mode and push and cloud hosting or your repo.",
+    "section3cover": "https://dotnet.microsoft.com/static/images/illustrations/open-source-vibrant-community.svg?v=4G4eNBIJsfB3aeslcXjb3bTqdeGq6zVCY2a7jtAuwkQ",
+    "section3code": "dotnet publish -c Release",
+    "section4": "Json",
+    "section4text": "You can use json for best and fast solution for make content or article, Blazor as frontend can be integrate with your API from backend database.",
+    "section4cover": "https://dotnet.microsoft.com/static/images/illustrations/swimlane-csharp-javascript.svg?v=RVihLr2USpbwopDAeQoHXkILcg1pgfuVCjSJea99TOA",
+    "section4code": "contents = await Http.GetFromJsonAsync",
+    "icon1": "SEO",
+    "icon1text": "Include with auto SEO injection",
+    "icon2": "Stable",
+    "icon2text": "Stable with blazor assembly.",
+    "icon3": "Easy",
+    "icon3text": "Easy to develope and deploy.",
+    "download": "Download Now",
+    "clone": "git clone https://github.com/mesinkasir/blazorlandingpage.git",
+    "github": "https://github.com/mesinkasir/blazorlandingpage"
+  }
+]

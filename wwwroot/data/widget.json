@@ -1,0 +1,32 @@
+[
+  {
+    "cover": "https://dotnet.microsoft.com/static/images/illustrations/swimlane-welcome-to-the-community.svg?v=obWCr2avckD5QI9XIuwEdYMaOaJUm7Zm8aWTCXgbybM",
+    "title": "Blazor Landing Page",
+    "description": "Free download and open source project build modern website with blazor webaseembly WASM",
+    "github": "https://github.com/mesinkasir/blazorlandingpage",
+    "menu1": "Home",
+    "menu1link": "/",
+    "menu2": "About",
+    "menu2link": "https://blazordev.web.app/",
+    "menu3": "Source Code",
+    "menu3link": "https://www.hockeycomputindo.com/search/label/blazor",
+    "menu4": "Documentation",
+    "menu4link": "https://www.hockeycomputindo.com/2022/10/free-download-blazor-webassembly-seo.html",
+    "pro1": "Blazor Web Dev",
+    "pro1link": "https://blazordev.web.app/",
+    "pro2": "Property Web App",
+    "pro2link": "https://property.axcora.com/",
+    "pro3": "Car Web App",
+    "pro3link": "https://cardealer.axcora.com/",
+    "pro4": "Website Application",
+    "pro4link": "https://www.hockeycomputindo.com/p/webapp.html",
+    "banner1": "https://avatars.githubusercontent.com/u/55355950?v=4",
+    "banner1link": "https://www.fiverr.com/creativitas/create-mobile-website-design-for-you-with-single-page-app",
+    "banner2": "/img/blazoresi.png",
+    "banner2link": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
+    "banner3": "/img/github.png",
+    "banner3link": "https://github.com",
+    "banner4": "/img/netlify.png",
+    "banner4link": "https://www.netlify.com/"
+	}
+]

@@ -1,0 +1,57 @@
+﻿@inject HttpClient Http
+@if (contents == null){}else{@foreach (var content in contents){
+<div class="container">
+    <div class="row text-center mb-5">
+        <div class="col-md-4 p-3">
+            <div class="p-3 p-md-5 shadow-sm rounded border-top-ungu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-trophy bg-ungu text-white p-3 rounded mb-3" viewBox="0 0 16 16">
+                    <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z" />
+                </svg>
+                <h3><a href="/">@content.Icon1</a></h3>
+                <p>@content.Icon1text</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-3">
+            <div class="p-3 p-md-5 shadow-sm rounded border-top-ungu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-award bg-ungu text-white p-3 rounded mb-3" viewBox="0 0 16 16">
+                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                </svg>
+                <h3><a href="/">@content.Icon2</a></h3>
+                <p>@content.Icon2text</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 p-3">
+            <div class="p-3 p-md-5 shadow-sm rounded border-top-ungu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-arrow-through-heart bg-ungu text-white p-3 rounded mb-3" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z" />
+                </svg>
+                <h3><a href="/">@content.Icon3</a></h3>
+                <p>@content.Icon3text</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+}}
+@code {
+    private Sectioncontent[]? contents;
+    protected override async Task OnInitializedAsync()
+    {
+        contents = await Http.GetFromJsonAsync<Sectioncontent[]>("data/home.json");
+    }
+    public class Sectioncontent
+    {
+        public string? Icon1 { get; set; }
+        public string? Icon1text { get; set; }
+        public string? Icon2 { get; set; }
+        public string? Icon2text { get; set; }
+        public string? Icon3 { get; set; }
+        public string? Icon3text { get; set; }
+        public string? Icon4 { get; set; }
+        public string? Icon4text { get; set; }
+    }
+}

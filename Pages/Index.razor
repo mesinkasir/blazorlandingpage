@@ -1,0 +1,39 @@
+﻿@page "/"
+@inject HttpClient Http
+@if (contents == null){}else{@foreach (var content in contents){
+        <PageTitle>@content.Title</PageTitle>
+        <HeadContent>
+            <meta name="description" content="@content.Description">
+            <meta content='@content.Title' property='og:title' />
+            <meta content='https://www.fiverr.com/creativitas/create-your-custom-website-and-app' property='og:author' />
+            <meta content='@content.Title' name='facebook:title' />
+            <meta content='website' property='og:type' />
+            <meta content='https://www.facebook.com/mesinkasircomplete' property='facebook:author' />
+            <meta content='@content.Section1cover' name='facebook:image' />
+            <meta content='@content.Title' property='og:site_name' />
+            <meta content='@content.Description' property='facebook:description' />
+            <meta content='summary_large_image' name='twitter:card' />
+            <meta content='https://twitter.com/hockeycomp' property='twitter:author' />
+            <meta content='@content.Section1cover' name='twitter:image' />
+            <meta content='@content.Description' name='twitter:description' />
+            <meta content='@content.Title ' name='twitter:title' />
+            <meta name="robots" content="index, follow">
+        </HeadContent>
+}}
+<Header/>
+<Intro/>
+<Icon/>
+<Download/>
+@code {
+    private Introcontent[]? contents;
+    protected override async Task OnInitializedAsync()
+    {
+        contents = await Http.GetFromJsonAsync<Introcontent[]>("data/home.json");
+    }
+    public class Introcontent
+    {
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+        public string? Section1cover { get; set; }
+    }
+}

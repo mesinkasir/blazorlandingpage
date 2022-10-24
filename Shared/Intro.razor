@@ -1,0 +1,73 @@
+﻿@inject HttpClient Http
+@if (contents == null){}else{@foreach (var content in contents){
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-md-6 p-3 p-md-5 text-start">
+            <h3 class="display-4"><a href="/">@content.Section1</a></h3>
+                    <p>@content.Section1text</p>
+                    <code>@content.Section1code</code>
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5">
+                    <img class="img-fuid" alt="@content.Section1" width="100%" src="@content.Section1cover" />
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5">
+                    <img class="img-fuid" alt="@content.Section2" width="100%" src="@content.Section2cover" />
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5 text-start">
+                    <h3 class="display-4"><a href="/">@content.Section2</a></h3>
+                    <p>@content.Section2text</p>
+                    <code>@content.Section2code</code>
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5 text-start">
+                    <h3 class="display-4"><a href="/">@content.Section3</a></h3>
+                    <p>@content.Section3text</p>
+                    <code>@content.Section3code</code>
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5">
+                    <img class="img-fuid" alt="@content.Section3" width="100%" src="@content.Section3cover" />
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5">
+                    <img class="img-fuid" width="100%" src="@content.Section4cover" />
+        </div>
+
+        <div class="col-md-6 p-3 p-md-5 text-start">
+                    <h3 class="display-4"><a href="/">@content.Section4</a></h3>
+                    <p>@content.Section4text</p>
+                    <code>@content.Section4code</code>
+        </div>
+
+    </div>
+</div>
+}}
+@code {
+    private Sectioncontent[]? contents;
+    protected override async Task OnInitializedAsync()
+    {
+        contents = await Http.GetFromJsonAsync<Sectioncontent[]>("data/home.json");
+    }
+    public class Sectioncontent
+    {
+        public string? Section1 { get; set; }
+        public string? Section1cover { get; set; }
+        public string? Section1text { get; set; }
+        public string? Section1code { get; set; }
+        public string? Section2 { get; set; }
+        public string? Section2cover { get; set; }
+        public string? Section2text { get; set; }
+        public string? Section2code { get; set; }
+        public string? Section3 { get; set; }
+        public string? Section3cover { get; set; }
+        public string? Section3text { get; set; }
+        public string? Section3code { get; set; }
+        public string? Section4 { get; set; }
+        public string? Section4cover { get; set; }
+        public string? Section4text { get; set; }
+        public string? Section4code { get; set; }
+    }
+}

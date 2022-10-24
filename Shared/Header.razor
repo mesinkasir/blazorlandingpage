@@ -1,0 +1,23 @@
+﻿@inject HttpClient Http
+@if (contents == null){}else{@foreach (var content in contents){
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 p-3 p-md-5">
+                    <h1><a href="/">@content.Title</a></h1>
+                    <h2>@content.Description</h2>
+        </div>
+    </div>
+</div>
+}       }
+@code {
+    private Headercontent[]? contents;
+    protected override async Task OnInitializedAsync()
+    {
+        contents = await Http.GetFromJsonAsync<Headercontent[]>("data/home.json");
+    }
+    public class Headercontent
+    {
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+    }
+}
