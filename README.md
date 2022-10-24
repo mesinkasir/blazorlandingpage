@@ -2,7 +2,7 @@
 
 blazor webassembly landing page
 
-Demo : On progress deploy...
+Demo : [https://blazorlandingpage.netlify.app](https://blazorlandingpage.netlify.app)
 
 Demo Purple : [https://blazordev.web.app/](https://blazordev.web.app/)
 
@@ -16,7 +16,7 @@ Display design
 
 --------
 
-Demo : On progress deploy...
+Demo : [https://blazorlandingpage.netlify.app](https://blazorlandingpage.netlify.app)
 
 Demo Purple : [https://blazordev.web.app/](https://blazordev.web.app/)
 
